@@ -1,0 +1,36 @@
+main {
+  .hero-container {
+    margin-bottom: 3rem;
+
+    &__image {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .call-to-action {
+    text-align: center;
+    margin-bottom: 3rem;
+    &__title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    &__description {
+      font-size: 1rem;
+      margin: 0 auto 1.5rem auto;
+      color: var(--Medium-Gray);
+      max-width: 90%;
+      line-height: 1.5rem;
+    }
+
+    &__button {
+      color: var(--Almost-White);
+      background-color: var(--Almost-Black);
+      border-radius: 15px;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.9rem 1.5rem;
+    }
+  }
+}

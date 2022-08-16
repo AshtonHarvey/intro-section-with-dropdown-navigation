@@ -1,0 +1,19 @@
+@use "../misc/variables.scss";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 1rem;
+  box-sizing: border-box;
+
+  .snap-logo {
+  }
+
+  .nav-component {
+    display: none;
+  }
+
+  .hamburger-button {
+  }
+}
