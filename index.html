@@ -11,20 +11,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/scss/index.scss" />
-    <script src="./src/js/index.js" async></script>
+    <script src="./src/js/index.js" defer></script>
   </head>
 
   <body>
+    <div id="mobile-menu" class="mobile-menu">
+      <img
+        id="close-button"
+        class="mobile-menu__closebtn"
+        src="./images/icon-close-menu.svg"
+        alt=""
+      />
+      <div class="mobile-menu__overlay">
+        <div class="mobile-menu__overlay__panel">
+          <!-- figure out naming for dropdowns -->
+          <a href="#"
+            >Features <img src="./images/icon-arrow-down.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
     <header>
       <img src="./images/logo.svg" alt="snap logo" class="snap-logo" />
 
       <img
+        id="hamburger-button"
         class="hamburger-button"
         src="./images/icon-menu.svg"
         alt="hamburger menu"
       />
       <nav class="nav-component"></nav>
     </header>
+
     <main>
       <div class="hero-container">
         <img
@@ -40,31 +58,29 @@
           create team rituals, and watch productivity soar.
         </p>
         <button class="call-to-action__button">Learn more</button>
+        <div class="partner-links">
+          <img
+            src="./images/client-databiz.svg"
+            alt=""
+            class="partner-links__databiz"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            alt=""
+            class="partner-links__audiophile"
+          />
+          <img
+            src="./images/client-meet.svg"
+            alt=""
+            class="partner-links__meet"
+          />
+          <img
+            src="./images/client-maker.svg"
+            alt=""
+            class="partner-links__maker"
+          />
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="partner-links">
-        <img
-          src="./images/client-databiz.svg"
-          alt=""
-          class="partner-links__databiz"
-        />
-        <img
-          src="./images/client-audiophile.svg"
-          alt=""
-          class="partner-links__audiophile"
-        />
-        <img
-          src="./images/client-meet.svg"
-          alt=""
-          class="partner-links__meet"
-        />
-        <img
-          src="./images/client-maker.svg"
-          alt=""
-          class="partner-links__maker"
-        />
-      </div>
-    </footer>
   </body>
 </html>

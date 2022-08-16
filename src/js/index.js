@@ -1,10 +1,24 @@
 import "../scss/index.scss";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+console.log("js is loaded");
+
+let mobileMenu = document.getElementById("mobile-menu");
+let hamburgerbtn = document.getElementById("hamburger-button");
+hamburgerbtn.addEventListener("click", openNav);
+let closebtn = document.getElementById("close-button");
+closebtn.addEventListener("click", closeNav);
+console.log(mobileMenu);
+
+// mobileMenu.onclick = () => {
+//   mobileMenu.style.width = "100%";
+//   console.log("opening menu");
+// };
+
+function openNav() {
+  mobileMenu.style.left = "0%";
+  console.log("opening menu");
+}
+function closeNav() {
+  mobileMenu.style.left = "100%";
+  console.log("opening menu");
+}
